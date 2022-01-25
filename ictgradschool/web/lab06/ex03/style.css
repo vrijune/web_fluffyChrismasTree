@@ -1,0 +1,90 @@
+#container {
+    width: 700px;
+    height: 541px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    position: absolute;
+}
+
+#background {
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#tree {
+    top: 113px;
+    width: 700px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.bauble {
+    z-index: 3;
+}
+
+#red {
+    left: 42px;
+    top: 341px;
+}
+
+#blue {
+    left: 113px;
+    top: 226px;
+}
+
+#green {
+    left: 425px;
+    top: 211px;
+}
+
+#orange {
+    left: 604px;
+    top: 281px;
+}
+
+#darkblue {
+    left: 300px;
+    top: 276px;
+}
+
+#pink {
+    z-index: 1;
+    left: 400px;
+    top: 330px;
+}
+
+/* TODO: Complete this (by copying relevant stuff from exercise two) */
+.animated {
+    animation-name:baubleDrop;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+
+/* TODO: Add your @keyframes here */
+
+@keyframes baubleDrop {
+    25%{top: 477px}
+    50%{top: 350px}
+    75%{top:477px}
+    100%{top:350px}
+}
+
+#container:hover #pink{
+    z-index: 3;
+}
+#container:not(:hover) .bauble{
+    top: 477px;
+}
+#container:not(:hover) #pink{
+    z-index: 3;
+}
+
+
+
+

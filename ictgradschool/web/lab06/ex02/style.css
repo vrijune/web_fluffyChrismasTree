@@ -1,0 +1,66 @@
+#container {
+    width: 700px;
+    height: 541px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    position: absolute;
+}
+
+#background {
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#tree {
+    top: 113px;
+    width: 700px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.bauble {
+    z-index: 3;
+}
+
+.bauble:hover{
+      transform: scale(2);
+    transition: transform 3s ease 1s;
+}
+
+
+#red {
+    left: 42px;
+    top: 341px;
+}
+
+#blue {
+    left: 113px;
+    top: 226px;
+}
+
+#green {
+    left: 425px;
+    top: 211px;
+}
+
+#orange {
+    left: 604px;
+    top: 281px;
+}
+
+#darkblue {
+    left: 300px;
+    top: 276px;
+}
+
+#pink {
+    z-index: 1;
+    left: 400px;
+    top: 330px;
+}
